@@ -6,22 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>微信小程序如何自定义tabbar | 钟小小小小浩</title>
+  <title>小程序云开发无法上传云函数 | 钟小小小小浩</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="首先在 app.json 中的 tabBar 项指定 custom 字段的值为 true，同时其余 tabBar 相关配置也补充完整。并在所有 tab页 的 json 里需声明 usingComponents 项，也可以在 app.json 全局开启。   在很目录下创建文件夹，名为 custom-tab-bar ，里面添加 tabbar 的文件   1234custom-tab-bar&amp;#x2">
+  <meta name="description" content="当前 Bug 的表现（可附上截图）  Error:getTcbFuncInfo fail code: ResourceNotFound.Function message:函数不存在  解决方案:在云开发控制台建立名为login的云函数后,重新上传login函数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序如何自定义tabbar">
-<meta property="og:url" content="http://yoursite.com/2020/03/25/tabbar/index.html">
+<meta property="og:title" content="小程序云开发无法上传云函数">
+<meta property="og:url" content="http://yoursite.com/2020/04/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%91%E5%BC%80%E5%8F%91%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0%E4%BA%91%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="钟小小小小浩">
-<meta property="og:description" content="首先在 app.json 中的 tabBar 项指定 custom 字段的值为 true，同时其余 tabBar 相关配置也补充完整。并在所有 tab页 的 json 里需声明 usingComponents 项，也可以在 app.json 全局开启。   在很目录下创建文件夹，名为 custom-tab-bar ，里面添加 tabbar 的文件   1234custom-tab-bar&amp;#x2">
+<meta property="og:description" content="当前 Bug 的表现（可附上截图）  Error:getTcbFuncInfo fail code: ResourceNotFound.Function message:函数不存在  解决方案:在云开发控制台建立名为login的云函数后,重新上传login函数">
 <meta property="og:locale" content="cn">
-<meta property="article:published_time" content="2020-03-25T01:49:19.000Z">
-<meta property="article:modified_time" content="2020-04-17T00:37:54.857Z">
+<meta property="og:image" content="http://yoursite.com/2020/04/img/0.jpg">
+<meta property="article:published_time" content="2020-04-21T01:53:40.000Z">
+<meta property="article:modified_time" content="2020-04-21T01:58:31.516Z">
 <meta property="article:author" content="ciao">
-<meta property="article:tag" content="微信小程序">
+<meta property="article:tag" content="云开发">
+<meta property="article:tag" content="小程序">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/img/0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="钟小小小小浩" type="application/atom+xml">
   
@@ -173,14 +176,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-tabbar" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-小程序云开发无法上传云函数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      微信小程序如何自定义tabbar
+      小程序云开发无法上传云函数
     </h1>
   
 
@@ -192,8 +195,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/03/25/tabbar/" class="archive-article-date">
-        <time datetime="2020-03-25T01:49:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
+<a href="/2020/04/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%91%E5%BC%80%E5%8F%91%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0%E4%BA%91%E5%87%BD%E6%95%B0/" class="archive-article-date">
+        <time datetime="2020-04-21T01:53:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-21</time>
 </a>
 
   
@@ -206,7 +209,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">148字</span>
+      <span class="post-count">51字</span>
     </span>
   </span>
 
@@ -227,13 +230,12 @@
   <div class="article-entry" itemprop="articleBody">
     
     <ul>
-<li><p>首先在 <code>app.json</code> 中的 <code>tabBar</code> 项指定 <code>custom</code> 字段的值为 <code>true</code>，同时其余 <code>tabBar</code> 相关配置也补充完整。<br>并在所有 <code>tab页</code> 的 <code>json</code> 里需声明 <code>usingComponents</code> 项，也可以在 <code>app.json</code> 全局开启。 </p>
-</li>
-<li><p>在很目录下创建文件夹，名为 <code>custom-tab-bar</code> ，里面添加 tabbar 的文件</p>
-</li>
+<li>当前 Bug 的表现（可附上截图）</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">custom-tab-bar&#x2F;index.js</span><br><span class="line">custom-tab-bar&#x2F;index.json</span><br><span class="line">custom-tab-bar&#x2F;index.wxml</span><br><span class="line">custom-tab-bar&#x2F;index.wxss</span><br></pre></td></tr></table></figure>
-<p>其实就是一个<strong>自定义组件</strong>，具体可参考 <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/ability/custom-tabbar.html?search-key=%E8%87%AA%E5%AE%9A%E4%B9%89tabbar" target="_blank" rel="noopener">自定义 tabBar · 小程序</a> 中的示例<br>这时你在 custom-tab-bar/index.wxml 中的内容就会被渲染到 tabbar 中</p>
+<p>Error:getTcbFuncInfo fail</p>
+<p>code: ResourceNotFound.Function message:函数不存在</p>
+<p><img src="../../img/0.jpg" alt="RUNOOB 图标"></p>
+<p>解决方案:在云开发控制台建立名为login的云函数后,重新上传login函数</p>
 
     
 
@@ -250,7 +252,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">云开发</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
         		</li>
       		
 		</ul>
@@ -269,18 +275,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/03/25/RegExp/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          常用正则表达式
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/24/webstrom%E6%BF%80%E6%B4%BB%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">webstrom激活码</div>
+    <a href="/2020/04/17/%E4%B8%80%E4%BA%9BJavaScript%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">一些JavaScript高阶函数</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -321,9 +318,9 @@
     <script src="/lib/gitment.js"></script>
   
   <script>
-    <!-- id: "微信小程序如何自定义tabbar" -->
+    <!-- id: "小程序云开发无法上传云函数" -->
     var gitment = new Gitment({
-      id: "20200325094919",
+      id: "20200421095340",
       owner: 'ciaozz',
       repo: 'ciaozz.github.io',
       oauth: {

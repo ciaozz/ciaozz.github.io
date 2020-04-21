@@ -6,21 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>微信小程序如何自定义tabbar | 钟小小小小浩</title>
+  <title>Archives: 2020 | 钟小小小小浩</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="首先在 app.json 中的 tabBar 项指定 custom 字段的值为 true，同时其余 tabBar 相关配置也补充完整。并在所有 tab页 的 json 里需声明 usingComponents 项，也可以在 app.json 全局开启。   在很目录下创建文件夹，名为 custom-tab-bar ，里面添加 tabbar 的文件   1234custom-tab-bar&amp;#x2">
-<meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序如何自定义tabbar">
-<meta property="og:url" content="http://yoursite.com/2020/03/25/tabbar/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="钟小小小小浩">
+<meta property="og:url" content="http://yoursite.com/archives/2020/page/2/index.html">
 <meta property="og:site_name" content="钟小小小小浩">
-<meta property="og:description" content="首先在 app.json 中的 tabBar 项指定 custom 字段的值为 true，同时其余 tabBar 相关配置也补充完整。并在所有 tab页 的 json 里需声明 usingComponents 项，也可以在 app.json 全局开启。   在很目录下创建文件夹，名为 custom-tab-bar ，里面添加 tabbar 的文件   1234custom-tab-bar&amp;#x2">
 <meta property="og:locale" content="cn">
-<meta property="article:published_time" content="2020-03-25T01:49:19.000Z">
-<meta property="article:modified_time" content="2020-04-17T00:37:54.857Z">
 <meta property="article:author" content="ciao">
-<meta property="article:tag" content="微信小程序">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="钟小小小小浩" type="application/atom+xml">
@@ -173,170 +168,73 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-tabbar" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-      <header class="article-header">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+<a href="/2020/03/24/import/" class="archive-article-date">
+        <time datetime="2020-03-24T05:36:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-24</time>
+</a>
+
+        </div>
+    	 
   
+    <h1 itemprop="name">
+	
+	  <a class="archive-article-title" href="/2020/03/24/import/" target="_blank">关于ES6中的import的原理和使用</a>
   
-    <h1 class="article-title" itemprop="name">
-      微信小程序如何自定义tabbar
     </h1>
   
 
 
-  
-  
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-<a href="/2020/03/25/tabbar/" class="archive-article-date">
-        <time datetime="2020-03-25T01:49:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
-</a>
-
-  
-  
-    
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">148字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
-    </span>
-  </span>
-</div>
-
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <ul>
-<li><p>首先在 <code>app.json</code> 中的 <code>tabBar</code> 项指定 <code>custom</code> 字段的值为 <code>true</code>，同时其余 <code>tabBar</code> 相关配置也补充完整。<br>并在所有 <code>tab页</code> 的 <code>json</code> 里需声明 <code>usingComponents</code> 项，也可以在 <code>app.json</code> 全局开启。 </p>
-</li>
-<li><p>在很目录下创建文件夹，名为 <code>custom-tab-bar</code> ，里面添加 tabbar 的文件</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">custom-tab-bar&#x2F;index.js</span><br><span class="line">custom-tab-bar&#x2F;index.json</span><br><span class="line">custom-tab-bar&#x2F;index.wxml</span><br><span class="line">custom-tab-bar&#x2F;index.wxss</span><br></pre></td></tr></table></figure>
-<p>其实就是一个<strong>自定义组件</strong>，具体可参考 <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/ability/custom-tabbar.html?search-key=%E8%87%AA%E5%AE%9A%E4%B9%89tabbar" target="_blank" rel="noopener">自定义 tabBar · 小程序</a> 中的示例<br>这时你在 custom-tab-bar/index.wxml 中的内容就会被渲染到 tabbar 中</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
         		</li>
       		
 		</ul>
 	</div>
 
-    
+          
 
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-<nav id="article-nav">
-  
-    <a href="/2020/03/25/RegExp/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          常用正则表达式
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/03/24/webstrom%E6%BF%80%E6%B4%BB%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">webstrom激活码</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-
-
-
-
-  
-  <div id="gitment-ctn"></div>
-  
-    <!-- 中文 -->
-    <link rel="stylesheet" href="/lib/gitment.css">
-    <script src="/lib/gitment.js"></script>
-  
-  <script>
-    <!-- id: "微信小程序如何自定义tabbar" -->
-    var gitment = new Gitment({
-      id: "20200325094919",
-      owner: 'ciaozz',
-      repo: 'ciaozz.github.io',
-      oauth: {
-        client_id: 'fd5327d3c5929ebd8158',
-        client_secret: '3cfb43b48af07f2f32116dbdbea38953d4203b34',
-      },
-    })
-    gitment.render('gitment-ctn')
-  </script>
-
-
+    </div></section>
   
 
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2020/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -375,8 +273,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
